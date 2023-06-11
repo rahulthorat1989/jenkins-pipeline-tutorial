@@ -3,7 +3,7 @@
     "networkMode": "awsvpc",
     "containerDefinitions": [
         {
-            "name": "sample-app",
+            "name": "rahul",
             "image": "{{image}}",
             "portMappings": [
                 {
