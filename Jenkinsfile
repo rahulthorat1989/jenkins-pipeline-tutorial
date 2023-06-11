@@ -13,7 +13,7 @@ pipeline {
     environment {
 	region = "us-east-1"
         docker_repo_uri = "306272608230.dkr.ecr.us-east-2.amazonaws.com/rahul"
-	task_def_arn = "arn:aws:ecs:us-east-2:306272608230:task-definition/jenkin-task1:11	"
+	task_def_arn = "arn:aws:ecs:us-east-2:306272608230:task-definition/first-run-task-definition"
         cluster = "jenkins-cluster"
         exec_role_arn = "arn:aws:iam::306272608230:role/FNB-ECS-SSH"
     }
@@ -50,14 +50,6 @@ pipeline {
     }
 }
 		
-        // This is a stage.
-        stage('Example') {
-            steps {
-                // This is a step of type "echo". It doesn't do much, only prints some text.
-                echo 'This is a sample stage'
-                // For a list of all the supported steps, take a look at
-                // https://jenkins.io/doc/pipeline/steps/ .
-            }
-        }
+      
     }
 }
